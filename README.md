@@ -1,6 +1,6 @@
 JPG to WebP Converter
 
-This Python script converts all JPG files in a specified directory to WebP format, with a quality level of 90 and lossy compression. The output files are saved in a separate directory with the same file name and a .webp extension.
+This Python script converts all JPG files in a specified directory to WebP format, with a quality level of 60 and lossy compression. The output files are saved in a separate directory with the same file name and a .webp extension.
 Requirements
 
     Python 3.x
