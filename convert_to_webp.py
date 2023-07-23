@@ -3,8 +3,11 @@ from PIL import Image
 
 
 def convert_to_webp(input_path, output_path):
-    with Image.open(input_path) as img:
-        img.save(output_path, 'webp', quality=60, lossless=False)
+    try:
+        with Image.open(input_path) as img:
+            img.save(output_path, 'webp', quality=60, lossless=False)
+    except IOError:
+        print(f"Error opening or converting file {input_path}. Skipping...")
 
 
 def main():
